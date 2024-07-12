@@ -1,0 +1,158 @@
+:root{
+    --branco-principal: #ffffff;
+    --cinza: #C0C0C0;
+    --azul-botao: #167BF7;
+    --fundo: #00000c;
+    --efeito: #619af0;
+    --fonte-principal: 'Inter';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url(imgs/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.conteiner__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.conteiner__botao{
+    background-color: var(--azul-botao);
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    
+
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    
+}
+
+.conteiner__aviso{
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.conteiner__img{
+    margin: 2em 0 4em 0;
+}
+
+.conteiner__caixa{
+    margin: 0 6em;
+}
+
+.secundario{
+    margin: 0 10em;
+    align-items: center;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    color: var(--branco-principal);
+
+}
+
+.descricao__texto{
+    color: var(--cinza);
+}
+
+.botao__terciario{
+    display: inline-block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.imagem__terceira{
+    padding-left: 4em;
+}
+
+.telas{
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+
+.conteiner__telas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.telas__descricao{
+    align-items: center;
+    text-align: center;
+}
+
+.texto__telas{
+    font-size: 24px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 0 8em;
+    
+}
+
+.list__footer{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 2.5em 0 2em 0;
+}
+
+.texto__footer{
+    font-size: 12px;
+    color: var(--cinza);
+    margin-bottom: 2em;
+}
+
+.lista__item{
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.lista__item:hover{
+    color: var(--azul-botao);
+}
+
+.conteiner__botao:hover{
+    background-color: var(--branco-principal) ;
+    color: var(--azul-botao);
+}
